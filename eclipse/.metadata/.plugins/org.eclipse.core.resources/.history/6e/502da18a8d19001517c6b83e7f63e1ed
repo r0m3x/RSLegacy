@@ -1,0 +1,17 @@
+package com.r0m3x.Campfire;
+
+import com.r0m3x.Campfire.proxy.CommonProxy;
+import com.r0m3x.Campfire.tabs.CampfireTab;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
+
+
+@Mod(modid="cf", name="Campfire", version="1.0", acceptedMinecraftVersions="[1.8]")
+public class Campfire
+{
+	@SidedProxy(clientSide="com.r0m3x.Campfire.proxy.ClientProxy", serverSide="com.r0m3x.Campfire.proxy.CommonProxy")
+	public static CommonProxy proxy;
+	public static final CampfireTab tabCampfire = new CampfireTab("tabCampfire");
+
+}

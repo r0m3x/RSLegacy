@@ -1,0 +1,13 @@
+package com.r0m3x.Campfire.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+
+public class CampfireTab extends CreativeTabs
+{
+	public CampfireTab(String label)
+	{
+		super(label);
+		func_78025_1("")
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.r0m3x.Campfire.tabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+
+public class CampfireTab extends CreativeTabs
+{
+	public CampfireTab(String label) {
+		super(label);
+		this.setBackgroundImageName("CampfireTab.png");
+	}
+	
+	@Override
+	public Item getTabIconItem() {
+		return Items.coal;
+	}
+
+}

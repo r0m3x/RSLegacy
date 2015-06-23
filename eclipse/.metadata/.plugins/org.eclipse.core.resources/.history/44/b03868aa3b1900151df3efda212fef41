@@ -1,0 +1,38 @@
+package com.r0m3x.Campfire.init;
+
+import com.r0m3x.Campfire.Reference;
+import com.r0m3x.Campfire.blocks.CampFire;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class Blocks {
+	
+	public static Block campfire;
+	
+	public static void init()
+	{
+		campfire = new CampFire(Material.cactus).setUnlocalizedName("CampFire");
+	}
+	
+	public static void register()
+	{
+		GameRegistry.registerBlock(campfire, campfire.getUnlocalizedName().substring(5));
+	}
+	
+	public static void registerRenders()
+	{
+		registerRender(campfire);
+	}
+	
+	public static void registerRender(Block block)
+	{
+		Item item = Item.getItemFromBlock(block);
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"))
+	}
+
+}

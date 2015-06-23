@@ -1,0 +1,10 @@
+package com.r0m3x.Campfire.proxy;
+
+public class ClientProxy extends CommonProxy
+{
+	public void registerRenders()
+	{
+
+	}
+
+}

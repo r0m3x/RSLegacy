@@ -1,0 +1,32 @@
+item.AirRune.name=Air Rune
+item.WaterRune.name=Water Rune
+item.EarthRune.name=Earth Rune
+item.FireRune.name=Fire Rune
+item.LawRune.name=Law Rune
+item.BodyRune.name=Body Rune
+item.MindRune.name=Mind Rune
+item.NatureRune.name=Nature Rune
+item.ChaosRune.name=Chaos Rune
+item.ArmadylRune.name=Armadyl Rune
+item.AstralRune.name=Astral Rune
+item.BloodRune.name=Blood Rune
+item.CosmicRune.name=Cosmic Rune
+item.DeathRune.name=Death Rune
+item.DustRune.name=Dust Rune
+item.SoulRune.name=Soul Rune
+item.SteamRune.name=Steam Rune
+item.MistRune.name=Mist Rune
+item.SmokeRune.name=Smoke Rune
+item.LavaRune.name=Lava Rune
+
+
+item.Logs.name=Logs
+item.OakLogs.name=Oak Logs
+item.WillowLogs.name=Willow Logs
+item.MapleLogs.name=Maple Logs
+item.YewLogs.name=Yew Logs
+item.MagicLogs.name=Magic Logs
+
+tile.BurningLog.name=Burning Logs
+
+itemGroup.tabMagic=RS Magic

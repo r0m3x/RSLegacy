@@ -1,0 +1,12 @@
+package com.r0m3x.Campfire;
+
+import net.minecraftforge.fml.common.Mod;
+
+
+@Mod(modid="cf", name="Campfire", version="1.0", acceptedMinecraftVersions="[1.8]")
+public class Campfire
+{
+	
+	public static CommonProxy proxy;
+
+}

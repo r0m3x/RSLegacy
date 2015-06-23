@@ -1,0 +1,6 @@
+package com.r0m3x.Campfire.proxy;
+
+public class CommonProxy
+{
+	public void registerRenders() {}
+}

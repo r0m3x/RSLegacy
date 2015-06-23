@@ -1,0 +1,40 @@
+package com.r0m3x.Campfire.blocks;
+
+import java.util.Random;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+public class CampFire extends Block {
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void randomDisplayTick(World w, BlockPos pos, IBlockState state, Random random) {
+		for(int i = 0; i < 3; ++i) {
+			double d0 = (double)pos.getX() + random.nextDouble();
+			double d1 = (double)pos.getY() + random.nextDouble();
+			double d2 = (double)pos.getZ() + random.nextDouble();
+			w.spawnParticle(EnumParticleTypes.FLAME, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
+			w.spawnParticle(EnumParticleTypes.FLAME, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
+			w.spawnParticle(EnumParticleTypes.FLAME, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
+			w.spawnParticle(EnumParticleTypes.SMOKE_LARGE, d0, d1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
+		}
+	}
+	
+	public CampFire(Material materialIn) {
+		super(materialIn);
+		this.setLightLevel(15F);
+	}
+	@Override
+	public boolean isOpaqueCube()
+	{
+		return false;
+	}
+
+}

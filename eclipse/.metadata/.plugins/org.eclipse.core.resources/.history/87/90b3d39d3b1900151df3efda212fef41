@@ -1,0 +1,17 @@
+package com.r0m3x.Campfire.init;
+
+import com.r0m3x.Campfire.blocks.CampFire;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class Blocks {
+	
+	public static Block campfire;
+	
+	public static void init()
+	{
+		campfire = new CampFire(Material.cactus)
+	}
+
+}
